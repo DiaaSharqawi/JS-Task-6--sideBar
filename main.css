@@ -1,0 +1,271 @@
+* <+================= Fonts =================+>*/
+
+/* <+================= Be Vietnam Pro =================+>*/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
+
+/* <+================= End of Fonts =================+>*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--White-97, #F7F7F8);
+  font-family: "Be Vietnam Pro", sans-serif;
+  min-width: 320px;
+}
+
+.selected {
+  border-radius: 8px;
+  background: var(--White-95, #f1f1f3);
+  padding: 14px 24px;
+}
+.container{
+    width: calc((100% - 324px));
+    margin: auto;
+  
+}
+
+
+ .view-all-button{
+  width: calc((100% - 160px - 300px)/2);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+.view-all-button button{
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 8px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--White-99, #FCFCFD);
+  text-transform: capitalize;
+  padding: 18px 24px;
+  
+
+}
+
+
+section .heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5px;
+  flex-wrap: wrap;
+}
+
+section .heading  p{
+  width: calc((100% - 324px - 300px)/2);
+  flex-grow: 3;
+}
+
+section .heading  h2{
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 48px;
+}
+
+section .heading .view-all-button{
+  width: calc((100% - 324px - 300px)/2);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+section .heading button{
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 8px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--White-99, #FCFCFD);
+  text-transform: capitalize;
+  padding: 18px 24px;
+  
+
+}
+
+
+
+/* <+================= End of Public =================+>*/
+
+
+
+
+
+
+/* <+================================== Start of Header Section ==================================+>*/
+
+header {
+  text-transform: capitalize; /*   <----------------------------->     */
+  margin-top: 20px;
+  padding: 20px 132px;
+}
+
+header a {
+  color: var(--Grey-15, #262626);
+}
+/*header .container { it could change
+  width: calc((100% - 162px));
+  margin: auto;
+}*/
+
+header .container .row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* <+================= Header:logo =================+>*/
+header .logo {
+  display: flex;
+  border-radius: 8px;
+  background: var(--Orange-50, #ff9500);
+}
+/* <+================= End of Header:logo =================+>*/
+
+/* <+================= Header:nav =================+>*/
+header nav {
+  /*display: flex;*/
+  display: none;
+  flex-grow: 1;
+}
+
+header nav ul {
+  display: flex;
+
+  gap: 25px;
+  list-style-type: none;
+  flex-wrap: wrap;
+
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--Grey-15, #262626);
+}
+/* <+=================  End of Header:nav =================+>*/
+
+/* <+================= Header:authentication =================+>*/
+header .authentication {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .authentication ul {
+  display: flex;
+  gap: 65px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .authentication ul li {
+  list-style-type: none;
+}
+
+header .authentication ul li a {
+  text-decoration: none;
+}
+
+header .login {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background: var(--Orange-50, #ff9500);
+  padding: 14px 34px;
+  color: white;
+}
+
+/* <+================= End of Header:authentication ==========+>*/
+
+header a:hover {
+  border-radius: 8px;
+  background: var(--White-95, #f1f1f3);
+  padding: 14px 24px;
+}
+.burger-icon {
+}
+
+/* <+================================== End of Header Section ==================================+>*/
+header ul{
+    display: none;
+}
+
+.burger-icon{
+    cursor: pointer;
+}
+.sideBarBurgerIcon{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 100%;
+    width: 30vw;
+    display: none;
+}
+
+.sideBarBurgerIcon .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 0;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+
+}
+
+.sideBarBurgerIcon .sideBar {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+  
+   
+
+}
+
+.sideBarBurgerIcon .sideBar .closeIcon{
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+  
+.sideBarBurgerIcon nav ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+  }
+  
+  .sideBarBurgerIcon nav ul li a {
+    text-decoration: none;
+    color: var(--Grey-15, #262626);
+  }
+
+  .sideBarBurgerIcon .sideBar{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+
+  .sideBar-show{
+    display: block;
+    
+  }
+
+
+  
+
+ 
+  
